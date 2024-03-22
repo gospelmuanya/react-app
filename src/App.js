@@ -54,7 +54,7 @@ function App() {
   <div className='container'>
     <h3>MY TODO LIST</h3>
     <form id="to-do" onSubmit={handleSubmit}>
-      <input type="text" placeholder='New task'value={todo} onChange={(e) => setTodo(e.target.value)}/>
+      <input type="text" placeholder='New task'value={todo} required onChange={(e) => setTodo(e.target.value)}/>
       <button type='submit'>Add</button>
     </form>
     {todos && todos.map((todo) =><div className='list' key={todo.id}>
