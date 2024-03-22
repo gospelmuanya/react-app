@@ -27,13 +27,14 @@ h3{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  margin: 20px 10px;
   
 }
 
 #to-do input{
   background-color:rgb(152, 0, 81);
   color: white;
+  margin-left: 5px;
   border: 0;
   outline: 0;
   height: 40px;
@@ -52,6 +53,7 @@ h3{
   border: 0;
   padding: 0 15px;
   margin-left: 5px;
+  margin-right: 20px;
   box-shadow: 5px 5px 10px  black;
 }
 
