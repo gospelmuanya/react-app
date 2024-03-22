@@ -8,19 +8,6 @@ function App() {
   const [todoEditing, setTodoEditing] = useState(null)
   const [editingText, setEditingText] = useState('')
 
-  // useEffect(() => {
-  //   const temp = localStorage.getItem('todos')
-  //   const loadedTodos = temp && JSON.parse(temp)
-
-  //   if(loadedTodos) {
-  //     setTodos(loadedTodos)
-  //   }
-  // },[])
-
-// useEffect(() => {
-//   const temp = JSON.stringfy(todos)
-//   localStorage.setItem('todos', temp)
-// },[todos])
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -32,7 +19,6 @@ function App() {
     }
 
     setTodos([...todos].concat(newTodo))
-    // localStorage.setItem('todos', JSON.stringify(todos))
     setTodo('')
   }
 
